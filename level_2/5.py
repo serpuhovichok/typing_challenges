@@ -1,7 +1,8 @@
 from constants import ___
+from typing import Tuple
 
 
-def get_current_user() -> ___:
+def get_current_user() -> Tuple[str, int, str]:
     pass
 
 
