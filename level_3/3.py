@@ -1,7 +1,14 @@
 from constants import ___
+from typing import Callable
+from typing import TypedDict
 
 
-def create_user(user_name: ___, user_age: ___, after_created: ___) -> ___:
+class User(TypedDict):
+    user_name: str
+    user_age: int
+
+
+def create_user(user_name: str, user_age: int, after_created: Callable[[int], None]) -> User | None:
     pass
 
 
